@@ -1,0 +1,86 @@
+body {
+  background-color: #f7dff4;
+
+  font-family: "Baloo 2";
+}
+
+/************************** INDEX **************************/
+
+.forside_container {
+  position: relative;
+  text-align: center;
+}
+
+.forside_billede {
+  width: 100%;
+  display: block;
+}
+
+/* STYLE SPIL KNAPPEN */
+.spil-knap {
+  position: absolute;
+  top: 365px;
+  left: 52%;
+  transform: translateX(-50%); /* Centrer knappen vandret */
+  padding: 10px 20px;
+  background-color: #f7dff4;
+  color: #fff; /* Hvid farve til teksten */
+  text-decoration: none; /* Fjern understregning */
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1; /* Sørg for, at knappen er øverst i forhold til billedet */
+}
+
+.spil-knap:hover {
+  background-color: #ffffff; /* Hvid farve ved hover */
+  color: #f7dff4;
+  transition: color 0.3s ease; /* Tilføjer en overgangseffekt for farveskift */
+}
+
+h1 {
+  font-size: 55px;
+ text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0 #f69fe5; /* Lyserød outline */
+}
+
+h2 {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 2px;
+}
+
+h2 {
+  padding: 8px 20px;
+  border: 1px solid #f3abe5;
+  border-radius: 5px;
+  background-color: white;
+  color: #ff7bac;
+}
+
+p{
+  font-size: 16px; 
+  line-height: 1.68; 
+  margin-bottom: 23px; /* Tilføj afstand mellem hvert afsnit */
+}
+
+/* Flex container */
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15px;
+}
+
+/* Style for billeder */
+.flex_col img {
+  max-width: 100%;
+  height: auto;
+}

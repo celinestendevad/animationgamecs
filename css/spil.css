@@ -1,0 +1,271 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  container-type: inline-size;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/baggrund.svg");
+  background-size: cover;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* SPILELEMENTER */
+
+#cupcake_container {
+  width: 5%;
+  aspect-ratio: 95/121;
+  position: absolute;
+}
+#cupcake_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/cupcake.svg);
+  background-size: cover;
+}
+
+#tekande_container {
+  width: 9%;
+  aspect-ratio: 138/96;
+  position: absolute;
+}
+
+#tekande_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tekande.svg);
+  background-size: cover;
+}
+
+#lagkage_container {
+  width: 8%;
+  aspect-ratio: 113/109;
+  position: absolute;
+}
+
+#lagkage_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/lagkage_good.svg);
+  background-size: cover;
+}
+
+#lagkage_bad_container {
+  width: 8%;
+  aspect-ratio: 113/109;
+  position: absolute;
+}
+
+#lagkage_bad_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/lagkage_bad.svg);
+  background-size: cover;
+}
+
+/* UI ELEMENTER */
+
+#game_ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/************************** POINT **************************/
+#score_board {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+  width: 26%;
+  aspect-ratio: 405/64;
+  background-image: url("../img/ui_life_points.svg");
+  background-size: cover;
+}
+
+#point {
+  position: absolute;
+  font-size: 2cqw;
+  width: 20%;
+  text-align: center;
+  top: 25%;
+  left: 76.83%;
+  color: white;
+}
+
+/************************** LIV **************************/
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  top: 8.8%;
+  width: 2%;
+  aspect-ratio: 43/39;
+  background-image: url(../img/ui_heartpink.svg);
+  background-size: cover;
+}
+
+#heart1 {
+  left: 7%;
+}
+#heart2 {
+  left: 9.5%;
+}
+#heart3 {
+  left: 12%;
+}
+
+.hide {
+  display: none;
+}
+.grey {
+  filter: grayscale(70%);
+}
+
+#liv {
+  font-size: 2cqw;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 8.5%;
+  left: 0%;
+  width: 24%;
+  text-align: center;
+}
+
+
+
+/************************** TIMER **************************/
+#time_container {
+  position: absolute;
+  width: 2vw;
+  height: 23vw;
+  top: -3%;
+  left: 12.5%;
+  border: 3px solid #ff7bac;
+  rotate: 90deg;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#time_sprite {
+  width: 2vw;
+  height: 23vw;
+  top: -3%;
+  left: 12.5%;
+  border-radius: 25px;
+  transform-origin: 50% 100%;
+  background-color: #fde3f9;
+  /* transform-origin: center bottom; */
+}
+
+
+
+
+
+
+/********************** Start- og slutskærme ***********************/
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/start_skræm.svg);
+  background-size: cover;
+}
+#play {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 15%;
+  aspect-ratio: 250/102;
+  background-image: url(../img/play_button.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+#slutpoint {
+  position: absolute;
+  top: 18.7%;
+  left: 35.5%;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#game_over {
+  position: absolute;
+  top: 12%;
+  left: 33%;
+  width: 40%;
+  aspect-ratio: 685 / 666;
+  background-image: url(../img/gameover.svg);
+  background-size: cover;
+}
+
+#gaatilmenu_1,
+#gaatilmenu_2 {
+  position: absolute;
+  top: 72%;
+  left: 60%;
+  width: 17%;
+  aspect-ratio: 124/124;
+  background-image: url(../img/menu_button.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#spiligen_1,
+#spiligen_2 {
+  position: absolute;
+  top: 72%;
+  left: 22%;
+  width: 17%;
+  aspect-ratio: 124/124;
+  background-image: url(../img/retry_button.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#level_complete {
+  position: absolute;
+  top: 12%;
+  left: 33%;
+  width: 40%;
+  aspect-ratio: 685 / 666;
+  background-image: url(../img/levelcomplete.svg);
+  background-size: cover;
+}
+
+/********************** index side ***********************/
+#spillet {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/spillet_button.svg);
+  background-size: cover;
+}

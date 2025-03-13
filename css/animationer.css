@@ -1,0 +1,107 @@
+/* ANIMATIONER  */
+
+/* falde animation */
+
+.fald {
+  animation: fald 2s infinite linear;
+}
+
+@keyframes fald {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0% 1000%;
+  }
+}
+
+.faldpos1 {
+  top: -30%;
+  left: 16%;
+}
+.faldpos2 {
+  top: -30%;
+  left: 29%;
+}
+.faldpos3 {
+  top: -30%;
+  left: 38%;
+}
+.faldpos4 {
+  top: -30%;
+  left: 46%;
+}
+.faldpos5 {
+  top: -30%;
+  left: 80%;
+}
+
+/* forsvind animation */
+.forsvind {
+  animation: forsvind 2s 1 both;
+}
+
+@keyframes forsvind {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+
+
+
+/**************** TIMER *****************/
+
+.shrink {
+  animation-name: shrink_kf;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrink_kf {
+  0% {
+    scale: 1 1;
+  }
+
+  100% {
+    scale: 1 0;
+  }
+}
+
+
+
+
+
+
+
+/************* ANDRE CLASSER *************/
+
+.frys {
+  animation-play-state: paused;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+.delay2 {
+  animation-delay: 2s;
+}
+
+.speed1 {
+  animation-duration: 2s;
+}
+.speed2 {
+  animation-duration: 3s;
+}

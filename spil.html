@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animationer.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/spil.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Spil</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="grafik.html"> Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="teknik.html">Teknik</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements"></div>
+
+          <div id="cupcake_container">
+            <div id="cupcake_sprite"></div>
+          </div>
+          <div id="lagkage_container">
+            <div id="lagkage_sprite"></div>
+          </div>
+          <div id="tekande_container">
+            <div id="tekande_sprite"></div>
+          </div>
+
+          <div id="lagkage_bad_container">
+            <div id="lagkage_bad_sprite"></div>
+          </div>
+
+          <div id="game_ui">
+            <div id="score_board">
+              <div id="point"></div>
+            </div>
+
+
+
+
+
+            <div id="energy_board">
+              <div id="heart1"></div>
+              <div id="heart2"></div>
+              <div id="heart3"></div>
+              <div id="liv"></div>
+            </div>
+            <div id="time_container">
+              <div id="time_sprite"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        
+
+        <div id="start">
+          <div id="play"></div>
+        </div>
+        <div id="game_over">
+          <div id="spiligen_1"></div>
+          <div id="gaatilmenu_1"></div>
+        </div>
+        <div id="level_complete">
+          <div id="slutpoint">5</div>
+          <div id="spiligen_2"></div>
+          <div id="gaatilmenu_2"></div>
+        </div>
+      </div>
+
+      <audio id="bg_snd" src="lyde/baggrundsmusik.m4a" loop></audio>
+      <audio id="clickgod" src="lyde/itemgood.mp3"></audio>
+      <audio id="clickbad" src="lyde/itembad.mp3"></audio>
+    </main>
+
+    <footer>Celines vilde spil...</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
